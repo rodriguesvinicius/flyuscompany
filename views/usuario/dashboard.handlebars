@@ -1,0 +1,492 @@
+{{>_navbarDash}}
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar" data-sidebarbg="skin6">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/usuarios/dashboard" aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
+                                    class="hide-menu">Dashboard</span></a></li>
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu">Configurações</span></li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
+                                    class="hide-menu">Configurar Máquinas</span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link" data-toggle="modal" data-target="#signup-modal"><span class="hide-menu"><i
+                                                class="fas fa-plus-circle"></i> Inserir máquinas
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link" data-toggle="modal" data-target="#signup-modal"><span class="hide-menu"><i
+                                                class="fas fa-edit circle"></i>Editar máquina
+                                        </span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link" href="/usuarios/ticket" aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
+                                    class="hide-menu">Chamados
+                                </span></a>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/usuarios/appchat" aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
+                                    class="hide-menu">Fale conosco</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/usuarios/calendar" aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
+                                    class="hide-menu">Calendário</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/usuarios/relatorios" aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
+                                    class="hide-menu">Relatórios</span></a></li>
+                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/" aria-expanded="false"><i class="fas fa-arrow-circle-left"></i><span
+                                    class="hide-menu">Pagina inicial</span></a></li>
+
+                        <li class="list-divider"></li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                <div class="row">
+
+                    <div class="col-7 align-self-center">
+                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Bem-vindo de volta: Vinicius
+                        </h4>
+                        <div class="d-flex align-items-center">
+
+                        </div>
+                    </div>
+                    <div class="col-5 align-self-center">
+                        <div class="customize-input float-right">
+
+                            <!-- Signup modal content -->
+                            <div id="signup-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <div class="modal-body">
+                                            <div class="text-center mt-2 mb-4">
+                                                <a href="index.html" class="text-success">
+                                                    <span><img class="mr-2" src="../assets/images/flyus2.png" alt=""
+                                                            height="30"></span>
+                                                </a>
+                                            </div>
+
+                                            <form class="pl-3 pr-3" action="#">
+
+                                                <div class="form-group">
+                                                    <label for="">Descrição da Maquina</label>
+                                                    <input class="form-control" type="" id="username" required="" placeholder="Ex Windows 10 home">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="">Localidade</label>
+                                                    <select class="form-control" id="personType" name="selectPerson" style="width: 175px;">
+                                                        <option value="1">São Paulo</option>
+                                                    </select>
+
+
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="">Aeroportos</label>
+                                                    <select class="form-control" id="personType" name="selectPerson" style="width: 250px;">
+                                                        <option value="1">Aeroporto de Congonhas</option>
+                                                        <option value="2">Aeroporto Internacional de Guarulhos (Cumbica)</option>
+                                                        <option value="3">Aeroporto de Campinas (Viracopos)</option>
+                                                        <option value="4">Aeroporto de São José dos Campos</option>
+                                                    </select>
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group text-center">
+                                                    <button class="btn btn-success btn-rounded" type="submit"> <i
+                                                            class="fas fa-plus-circle"></i> Cadastrar Máquina</button>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+                            <!-- /.modal -->
+
+
+                            <div class="btn-list">
+                                <!-- Custom width modal -->
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- *************************************************************** -->
+                <!-- Start First Cards -->
+                <!-- *************************************************************** -->
+                <div class="card-group">
+                    <div class="card border-right">
+                        <div class="card-body">
+                            <div class="d-flex d-lg-flex d-md-block align-items-center">
+                                <div>
+                                    <i class="fas fa-desktop" style="margin-left: 0px; margin-top: 5px;"></i>
+                                    <div class="d-inline-flex align-items-center">
+                                        <h2 class="text-dark mb-1 font-weight-medium" style="margin-left: 10px;">3
+
+                                        </h2>
+
+                                    </div>
+
+                                    <h6 class="font-weight-normal mb-0 w-100 text-truncate">Número de máquinas </h6>
+                                </div>
+                                <div class="ml-auto mt-md-3 mt-lg-0">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-right ml-2">
+                        <div class="card-body" style="border: #27ae60 2px solid;">
+                            <div>
+                                <center>
+                                    <h6 class="font-weight-normal mb-0 w-100 text-truncate">Máquinas Estáveis</h6>
+                                    <div class="d-inline-flex align-items-center">
+                                        <h2 class="text-dark mb-1 font-weight-medium">1
+
+                                        </h2>
+
+                                    </div>
+                                    <br>
+                                    <button class=" btn btn-sm btn-rounded btn-success">visualizar</button>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-right ml-2">
+                        <div class="card-body" style="border: #f1c40f 2px solid;">
+                            <div>
+                                <center>
+                                    <h6 class="font-weight-normal mb-0 w-100 text-truncate">Máquinas em alerta</h6>
+                                    <div class="d-inline-flex align-items-center">
+                                        <h2 class="text-dark mb-1 font-weight-medium">1
+
+                                        </h2>
+
+                                    </div>
+                                    <br>
+                                    <button class=" btn btn-sm btn-rounded btn-warning text-white">visualizar</button>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ml-2">
+                        <div class="card-body" style="border: #e74c3c 2px solid;">
+                            <div>
+                                <center>
+                                    <h6 class="font-weight-normal mb-0 w-100 text-truncate">Máquinas Críticas</h6>
+                                    <div class="d-inline-flex align-items-center">
+                                        <h2 class="text-dark mb-1 font-weight-medium">1
+
+                                        </h2>
+
+                                    </div>
+                                    <br>
+                                    <button class=" btn btn-sm btn-rounded btn-danger">visualizar</button>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- *************************************************************** -->
+                <!-- End First Cards -->
+                <!-- *************************************************************** -->
+                <!-- *************************************************************** -->
+                <!-- Start Sales Charts Section -->
+                <!-- *************************************************************** -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <ul class="list-style-none mb-0">
+                                    <center>
+                                        <li><img src="../assets/images/icons8_imac_100px.png" alt="" srcset=""></li>
+                                    </center>
+
+                                    <li class="mb-2"><i class="fas fa-circle text-success font-10 mr-2"></i>
+                                        <span class="text-muted">Status</span>
+                                        <span class="text-dark float-right font-weight-medium">Estável</span>
+                                    </li>
+
+                                    <li class="mb-2">
+                                        <i class="fas fa-circle text-primary font-10 mr-2"></i>
+                                        <span class="text-muted">Localização</span>
+                                        <span class="text-dark float-right font-weight-medium">ViraCopos</span>
+                                    </li>
+                                    <center>
+                                        <li class="mt-4">
+                                            <button type="button" class="btn btn-primary btn-rounded" data-toggle="modal" data-target=".bd-example-modal-lg"><i
+                                                    class="fas fa-cogs"></i>
+                                                Informações</button>
+
+                                        </li>
+                                    </center>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <ul class="list-style-none mb-0">
+                                    <center>
+                                        <li><img src="../assets/images/icons8_imac_100px.png" alt="" srcset=""></li>
+                                    </center>
+
+                                    <li class="mb-2"><i class="fas fa-circle text-warning font-10 mr-2"></i>
+                                        <span class="text-muted">Status</span>
+                                        <span class="text-dark float-right font-weight-medium">Alerta</span>
+                                    </li>
+
+                                    <li class="mb-2">
+                                        <i class="fas fa-circle text-primary font-10 mr-2"></i>
+                                        <span class="text-muted">Localização</span>
+                                        <span class="text-dark float-right font-weight-medium">Congonhas</span>
+                                    </li>
+                                    <center>
+                                        <li class="mt-4">
+                                            <button type="button" class="btn btn-primary btn-rounded" data-toggle="modal" data-target=".bd-example-modal-lg"><i
+                                                    class="fas fa-cogs"></i>
+                                                Informações</button>
+                                        </li>
+                                    </center>
+                                </ul>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <ul class="list-style-none mb-0">
+                                    <center>
+                                        <li><img src="../assets/images/icons8_imac_100px.png" alt="" srcset=""></li>
+                                    </center>
+
+                                    <li class="mb-2"><i class="fas fa-circle text-danger font-10 mr-2"></i>
+                                        <span class="text-muted">Status</span>
+                                        <span class="text-dark float-right font-weight-medium">Crítica</span>
+                                    </li>
+
+                                    <li class="mb-2">
+                                        <i class="fas fa-circle text-primary font-10 mr-2"></i>
+                                        <span class="text-muted">Localização</span>
+                                        <span class="text-dark float-right font-weight-medium">Guarulhos</span>
+                                    </li>
+                                    <center>
+                                        <li class="mt-4">
+                                            <button type="button" class="btn btn-primary btn-rounded" data-toggle="modal" data-target=".bd-example-modal-lg"><i
+                                                    class="fas fa-cogs"></i>
+                                                Informações</button>
+
+                                        </li>
+                                    </center>
+                                </ul>
+
+                                <!-- Modal3 -->
+                                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="Pc03">informações</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <ul>
+                                                    <li>
+                                                        <img style="margin-bottom: 2px;" src="../assets/images/icons8_processor_20px_1.png" alt=""> CPU: <b>27%</b>
+                                                    </li>
+                                                    <li>
+                                                        <img style="margin-bottom: 2px;" src="../assets/images/icons8_smartphone_ram_20px.png" alt=""> MEMÓRIA: <b>60%</b>
+                                                    </li>
+                                                    <li>
+                                                        <img style="margin-bottom: 2px;" src="../assets/images/icons8_hdd_20px.png" alt=""> DISCO:
+                                                        <b>70%<b>
+                                                    </li>
+
+                                                </ul>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12  ">
+                                                        <div class="card shadow-sm p-3">
+                                                            <div class="card-body">
+                                                                <ul class="list-inline text-right">
+                                                                    <li class="list-inline-item">
+                                                                        <h5><i
+                                                                                class="fa fa-circle mr-1 text-primary"></i>CPU
+                                                                        </h5>
+                                                                    </li>
+                                                                </ul>
+                                                                <div id="chart_div"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <div class="card shadow-sm p-3">
+                                                            <div class="card-body">
+                                                                <ul class="list-inline text-right">
+                                                                    <li class="list-inline-item">
+                                                                        <h5><i
+                                                                                class="fa fa-circle mr-1 text-success"></i>MEMÓRIA
+                                                                        </h5>
+                                                                    </li>
+                                                                </ul>
+                                                                <div id="chart_div2"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-12 col-md-12 ">
+                                                        <div class="card shadow-sm p-3">
+                                                            <div class="card-body">
+                                                                <ul class="list-inline text-right">
+                                                                    <li class="list-inline-item">
+                                                                        <h5><i
+                                                                                class="fa fa-circle mr-1 text-danger"></i>DISCO
+                                                                        </h5>
+                                                                    </li>
+                                                                </ul>
+                                                                <div id="chart_div3"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- *************************************************************** -->
+                <!-- End Sales Charts Section -->
+                <!-- *************************************************************** -->
+                <!-- *************************************************************** -->
+                <!-- Start Location and Earnings Charts Section -->
+                <!-- *************************************************************** -->
+                <div class="row">
+                    <div class="col-md-6 col-lg-8">
+                        <div class="card" style="">
+                            <div class="card-body">
+                                <div class="" style="margin-left: 40px;">
+                                    <div id="chart_div5" style="width: 600px; height: 400px; margin-left: -50px;"></div>
+                                </div>
+                                <ul class="list-inline text-center mt-4 mb-0">
+                                    <li class="list-inline-item text-muted font-italic">Mapa de calor da Cpu</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Atividade Recente</h4>
+                                <div class="mt-4 activity">
+                                    <div class="d-flex align-items-start border-left-line pb-3">
+                                    
+                                     
+                                    </div>
+                                    <div class="d-flex align-items-start border-left-line pb-3">
+                                        <div>
+                                            <a href="javascript:void(0)"
+                                                class="btn btn-danger btn-circle mb-2 btn-item">
+                                                <i data-feather="message-square"></i>
+                                            </a>
+                                        </div>
+                                        <div class="ml-3 mt-2">
+                                            <h5 class="text-dark font-weight-medium mb-2">Novo ticket do suporte</h5>
+                                            <p class="font-14 mb-2 text-muted">Vinicius você criu um ticket<br>
+                                                ticket</p>
+                                            <span class="font-weight-light font-14 text-muted">25 Minutes Mai</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start border-left-line">
+                                        <div>
+                                            <a href="javascript:void(0)" class="btn btn-cyan btn-circle mb-2 btn-item">
+                                                <i data-feather="bell"></i>
+                                            </a>
+                                        </div>
+                                        <div class="ml-3 mt-2">
+                                            <h5 class="text-dark font-weight-medium mb-2">Temperatura Registrada
+                                            </h5>
+                                            <p class="font-14 mb-2 text-muted">Temperatura capturada com sucesso<br></p>
+                                            <span class="font-weight-light font-14 mb-1 d-block text-muted">2 Hours
+                                                Mai</span>
+                                            <a href="javascript:void(0)"
+                                                class="font-14 border-bottom pb-1 border-info">Load
+                                                More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center text-muted">
+                Todos os direitos reservados <a href="http://flyuscompany.herokuapp.com/">FlyUs Company</a>.
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
